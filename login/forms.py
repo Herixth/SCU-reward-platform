@@ -20,8 +20,8 @@ class UserForm(forms.Form):
 
 class RegisterForm(forms.Form):
     gender = (
-        ('male', "男"),
         ('female', "女"),
+        ('male', "男"),
     )
     username = forms.CharField(
         label="用户名",
@@ -34,7 +34,7 @@ class RegisterForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'form-control'})
     )
     password1 = forms.CharField(
-        label="密码(六位以上)", 
+        label="密码(七位及以上)", 
         max_length=256, 
         widget=forms.PasswordInput(attrs={'class': 'form-control'})
     )

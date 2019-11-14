@@ -16,6 +16,7 @@ class Task(models.Model):
     receiver = models.CharField(max_length=128)
     deadline = models.DateTimeField('deadline')
     pub_time = models.DateTimeField(auto_now_add=True)
+    task_description = models.CharField(max_length=30)
     task_detail = models.CharField(max_length=300)
     task_state = models.CharField(max_length=32, choices=state, default='未开始')
 
