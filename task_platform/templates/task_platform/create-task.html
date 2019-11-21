@@ -13,11 +13,11 @@
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
 </head>
 
 <body>
-  <main id="tt-pageContent">
+  <main id="tt-pageContent" style="">
     <div class="container">
       <div class="tt-wrapper-inner">
         <h1 class="tt-title-border">
@@ -38,69 +38,30 @@
             <div class="tt-js-active-btn tt-wrapper-btnicon">
               <div class="row tt-w410-col-02">
                 <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
+                  <a href="#" class="tt-button-icon"style="padding-top:19px;">
+                    {% comment %} <span class="tt-icon"> {% endcomment %}
+                      {% comment %} <svg>
                         <use xlink:href="#icon-discussion"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Discussion</span>
+                      </svg> {% endcomment %}
+                    {% comment %} </span> {% endcomment %}
+                    <span class="tt-text" style="margin-top:0px;">赏金模式</span>
                   </a>
                 </div>
                 <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
+                  <a href="#" class="tt-button-icon"style="padding-top:19px;">
+                    {% comment %} <span class="tt-icon"> {% endcomment %}
+                      {% comment %} <svg>
                         <use xlink:href="#Question"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Question</span>
-                  </a>
-                </div>
-                <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
-                        <use xlink:href="#Poll"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Poll</span>
-                  </a>
-                </div>
-                <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
-                        <use xlink:href="#icon-gallery"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Gallery</span>
-                  </a>
-                </div>
-                <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
-                        <use xlink:href="#Video"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Video</span>
-                  </a>
-                </div>
-                <div class="col-4 col-lg-3 col-xl-2">
-                  <a href="#" class="tt-button-icon">
-                    <span class="tt-icon">
-                      <svg>
-                        <use xlink:href="#Others"></use>
-                      </svg>
-                    </span>
-                    <span class="tt-text">Other</span>
+                      </svg> {% endcomment %}
+                    {% comment %} </span> {% endcomment %}
+                    <span class="tt-text" style="margin-top:0px;">猎人模式</span>
+                    {% comment %} <div>我可以接收任务</div> {% endcomment %}
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="pt-editor">
+          <div class="pt-editor" style="padding-top:0px;">
             <h6 class="pt-title">任务详情</h6>
             <div class="pt-row">
               <div class="col-left">
